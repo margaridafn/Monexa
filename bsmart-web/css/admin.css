@@ -1,0 +1,53 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.painel-admin {
+  padding: 30px;
+}
+
+.painel-admin ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.painel-admin ul li a {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.painel-admin ul li a:hover {
+  background-color: #005599;
+}
+
+#adminConteudo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}

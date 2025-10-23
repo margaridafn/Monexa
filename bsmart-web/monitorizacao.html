@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitorização – ECL Monitorização</title>
+  <link rel="stylesheet" href="css/monitorizacao.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ECL Monitorização</h1>
+    <nav>
+      <a href="cliente.html">← Voltar ao Painel</a>
+      <a href="login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="leituras">
+      <h2>Últimas Leituras</h2>
+      <div id="leiturasContainer"></div>
+    </section>
+
+    <section class="graficos">
+      <h2>Status Visual dos Tanques</h2>
+      <canvas id="graficoTanques" width="600" height="300"></canvas>
+    </section>
+
+    <section class="logs">
+      <h2>Logs de Envio de Email</h2>
+      <ul id="logsContainer"></ul>
+    </section>
+  </main>
+
+  <script src="js/monitorizacao.js"></script>
+</body>
+</html>

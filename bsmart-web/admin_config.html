@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Configurações do Sistema – Admin</title>
+  <link rel="stylesheet" href="css/admin_config.css" />
+</head>
+<body>
+  <header>
+    <h1>Configurações do Sistema</h1>
+    <nav>
+      <a href="admin.html">← Voltar ao painel</a>
+      <a href="login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="config">
+      <h2>Parâmetros Técnicos</h2>
+      <form id="formConfig">
+        <label for="periodicidade">Periodicidade de envio:</label>
+        <select id="periodicidade" name="periodicidade">
+          <option value="diaria">Diária</option>
+          <option value="semanal">Semanal</option>
+          <option value="mensal">Mensal</option>
+        </select>
+
+        <label for="horaEnvio">Hora de envio:</label>
+        <input type="time" id="horaEnvio" name="horaEnvio" value="08:00" />
+
+        <button type="submit">Guardar</button>
+      </form>
+
+      <div id="mensagem"></div>
+    </section>
+  </main>
+
+  <script src="js/admin_config.js"></script>
+</body>
+</html>

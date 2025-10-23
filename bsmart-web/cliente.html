@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Dados do Cliente – ECL Monitorização</title>
+  <link rel="stylesheet" href="css/cliente.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ECL Monitorização</h1>
+    <nav>
+      <span>Bem-vindo, </span><span id="nomeCliente"></span>
+      <a href="login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cliente-info">
+      <h2>Dados Gerais</h2>
+      <div class="campo"><strong>Nome:</strong> <span id="nomeCliente"></span></div>
+      <div class="campo"><strong>Morada:</strong> <span id="moradaCliente"></span></div>
+      <div class="campo"><strong>NIF:</strong> <span id="nifCliente"></span></div>
+      <div class="campo"><strong>Contacto 1:</strong> <span id="contacto1"></span></div>
+      <div class="campo"><strong>Contacto 2:</strong> <span id="contacto2"></span></div>
+    </section>
+
+    <section class="config-envio">
+      <h2>Configuração de Envio</h2>
+      <div class="campo"><strong>Email 1:</strong> <span id="email1"></span></div>
+      <div class="campo"><strong>Email 2:</strong> <span id="email2"></span></div>
+      <div class="campo"><strong>Periodicidade:</strong> <span id="periodicidade"></span></div>
+      <div class="campo"><strong>Hora de Envio:</strong> <span id="horaEnvio"></span></div>
+    </section>
+
+    <section class="navegacao">
+      <h2>Navegação</h2>
+      <div class="botoes-navegacao">
+        <a href="estacoes.html" class="botao">Estações</a>
+        <a href="tanques.html" class="botao">Tanques</a>
+        <a href="monitorizacao.html" class="botao">Monitorização</a>
+      </div>
+    </section>
+
+    <!-- NOVO: Dashboard com gráfico e lista de estações -->
+    <section id="dashboard-cliente" class="dashboard-container">
+      <aside id="lista-estacoes" class="estacoes-sidebar">
+        <!-- Botões de estações serão inseridos via JS -->
+      </aside>
+
+      <section id="grafico-tanques" class="grafico-container">
+        <h2>Níveis dos Tanques</h2>
+        <canvas id="graficoNiveisTanques"></canvas>
+      </section>
+    </section>
+  </main>
+
+  <script src="js/cliente.js"></script>
+</body>
+</html>
