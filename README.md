@@ -1,4 +1,4 @@
-# 🛢️ Monexa — Sistema Web de Monitorização de Tanques
+# Monexa — Sistema Web de Monitorização de Tanques
 
 ## Descrição
 O **Monexa** é uma aplicação web **multi-cliente** para **monitorização de tanques de combustível e gestão de estações**, com integração à **API BSMART** e exportação automática de dados para o **FPI.Net**.  
